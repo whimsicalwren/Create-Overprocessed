@@ -1,8 +1,8 @@
-package dev.wren.exampleaddon.infrastructure.config;
+package dev.wren.createoverprocessed.infrastructure.config;
 
 import com.tterrag.registrate.builders.BlockBuilder;
 import com.tterrag.registrate.util.nullness.NonNullUnaryOperator;
-import dev.wren.exampleaddon.ExampleAddon;
+import dev.wren.createoverprocessed.COverprocessed;
 import it.unimi.dsi.fastutil.objects.Object2DoubleMap;
 import it.unimi.dsi.fastutil.objects.Object2DoubleOpenHashMap;
 import net.createmod.catnip.config.ConfigBase;
@@ -20,7 +20,7 @@ import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
 
-public class AddonStress extends ConfigBase {
+public class COStress extends ConfigBase {
 
     private static final int VERSION = 2;
 
@@ -68,7 +68,7 @@ public class AddonStress extends ConfigBase {
 
     public static <B extends Block, P> NonNullUnaryOperator<BlockBuilder<B, P>> setImpact(double value) {
         return builder -> {
-            ResourceLocation id = ExampleAddon.asResource(builder.getName());
+            ResourceLocation id = COverprocessed.asResource(builder.getName());
             DEFAULT_IMPACTS.put(id, value);
             return builder;
         };
@@ -76,7 +76,7 @@ public class AddonStress extends ConfigBase {
 
     public static <B extends Block, P> NonNullUnaryOperator<BlockBuilder<B, P>> setCapacity(double value) {
         return builder -> {
-            ResourceLocation id = ExampleAddon.asResource(builder.getName());
+            ResourceLocation id = COverprocessed.asResource(builder.getName());
             DEFAULT_CAPACITIES.put(id, value);
             return builder;
         };

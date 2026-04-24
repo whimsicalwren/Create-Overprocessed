@@ -1,9 +1,9 @@
-package dev.wren.exampleaddon.infrastructure.config;
+package dev.wren.createoverprocessed.infrastructure.config;
 
 import net.createmod.catnip.config.ConfigBase;
 import org.jetbrains.annotations.NotNull;
 
-public class AddonCommon extends ConfigBase {
+public class COCommon extends ConfigBase {
 
     public final ConfigGroup common = group(0, "common", Comments.common);
 

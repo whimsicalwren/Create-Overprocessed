@@ -1,9 +1,9 @@
-package dev.wren.exampleaddon.infrastructure.config;
+package dev.wren.createoverprocessed.infrastructure.config;
 
 import net.createmod.catnip.config.ConfigBase;
 import org.jetbrains.annotations.NotNull;
 
-public class AddonClient extends ConfigBase {
+public class COClient extends ConfigBase {
 
     public final ConfigGroup client = group(0, "client", Comments.client);
 

@@ -1,13 +1,13 @@
-package dev.wren.exampleaddon.infrastructure.config;
+package dev.wren.createoverprocessed.infrastructure.config;
 
 import net.createmod.catnip.config.ConfigBase;
 import org.jetbrains.annotations.NotNull;
 
-public class AddonServer extends ConfigBase {
+public class COServer extends ConfigBase {
 
     public final ConfigGroup server = group(0, "server", Comments.server);
 
-    public final AddonStress stressValues = nested(1, AddonStress::new, Comments.stress);
+    public final COStress stressValues = nested(1, COStress::new, Comments.stress);
 
 
     private static class Comments {

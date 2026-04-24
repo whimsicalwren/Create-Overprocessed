@@ -16,12 +16,9 @@ displayName="${mod_name}"
 # A text field displayed in the mod UI
 #credits="" #optional
 
-# The authors of the mod, displayed in the mod UI (optional)
-#authors=""
+authors="wren"
 
-description='''
-Example mod description.
-'''
+description='''no'''
 
 #[[mixins]]
 #config="${mod_id}.mixins.json"

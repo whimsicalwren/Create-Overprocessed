@@ -1,0 +1,13 @@
+{
+  "type": "createoverprocessed:dragon_breathing",
+  "ingredients": [
+    {
+      "tag": "c:bricks/normal/slabs"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:end_stone_brick_slab"
+    }
+  ]
+}

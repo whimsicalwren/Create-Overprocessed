@@ -1,7 +1,6 @@
-package dev.wren.exampleaddon.infrastructure.config;
+package dev.wren.createoverprocessed.infrastructure.config;
 
 import com.simibubi.create.api.stress.BlockStressValues;
-import dev.wren.exampleaddon.ExampleAddon;
 import net.createmod.catnip.config.ConfigBase;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
@@ -17,23 +16,23 @@ import java.util.Map;
 import java.util.function.Supplier;
 
 @EventBusSubscriber
-public class ExampleAddonConfigs {
+public class COverprocessedConfigs {
 
     private static final Map<ModConfig.Type, ConfigBase> CONFIGS = new EnumMap<>(ModConfig.Type.class);
 
-    private static AddonClient client;
-    private static AddonCommon common;
-    private static AddonServer server;
+    private static COClient client;
+    private static COCommon common;
+    private static COServer server;
 
-    public static AddonClient client() {
+    public static COClient client() {
         return client;
     }
 
-    public static AddonCommon common() {
+    public static COCommon common() {
         return common;
     }
 
-    public static AddonServer server() {
+    public static COServer server() {
         return server;
     }
 
@@ -55,14 +54,14 @@ public class ExampleAddonConfigs {
     }
 
     public static void register(ModLoadingContext context, ModContainer container) {
-        client = register(AddonClient::new, ModConfig.Type.CLIENT);
-        common = register(AddonCommon::new, ModConfig.Type.COMMON);
-        server = register(AddonServer::new, ModConfig.Type.SERVER);
+        client = register(COClient::new, ModConfig.Type.CLIENT);
+        common = register(COCommon::new, ModConfig.Type.COMMON);
+        server = register(COServer::new, ModConfig.Type.SERVER);
 
         for (Map.Entry<ModConfig.Type, ConfigBase> pair : CONFIGS.entrySet())
             container.registerConfig(pair.getKey(), pair.getValue().specification);
 
-        AddonStress stress = server().stressValues;
+        COStress stress = server().stressValues;
         BlockStressValues.IMPACTS.registerProvider(stress::getImpact);
         BlockStressValues.CAPACITIES.registerProvider(stress::getCapacity);
     }
