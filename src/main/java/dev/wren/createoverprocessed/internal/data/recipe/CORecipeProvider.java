@@ -24,6 +24,10 @@ public class CORecipeProvider extends RecipeProvider {
 
     public static void registerFanRecipes(DataGenerator generator, PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         GENERATORS.add(new CODragonBreathingRecipeGen(output, registries));
+        GENERATORS.add(new COFreezingRecipeGen(output, registries));
+        GENERATORS.add(new COHoneyingRecipeGen(output, registries));
+        GENERATORS.add(new COSandingRecipeGen(output, registries));
+        GENERATORS.add(new COSeethingRecipeGen(output, registries));
 
         generator.addProvider(true, new DataProvider() {
 

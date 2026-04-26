@@ -1,7 +1,5 @@
 package dev.wren.createoverprocessed.internal.data.recipe;
 
-import com.simibubi.create.foundation.recipe.IRecipeTypeInfo;
-import dev.wren.createoverprocessed.COverprocessed;
 import dev.wren.createoverprocessed.content.recipes.DragonBreathingRecipe;
 import dev.wren.createoverprocessed.index.CORecipeTypes;
 import dev.wren.createoverprocessed.index.COTags;
@@ -10,12 +8,13 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.Tags;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
 
 public class CODragonBreathingRecipeGen extends FanRecipeGenHelper<DragonBreathingRecipe> {
     public CODragonBreathingRecipeGen(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
-        super(output, registries, COverprocessed.MODID);
+        super(output, registries);
     }
 
     GeneratedRecipe
@@ -27,7 +26,7 @@ public class CODragonBreathingRecipeGen extends FanRecipeGenHelper<DragonBreathi
     ;
 
     @Override
-    protected IRecipeTypeInfo getRecipeType() {
+    protected @NotNull CORecipeTypes getRecipeType() {
         return CORecipeTypes.DRAGON_BREATHING;
     }
 }
