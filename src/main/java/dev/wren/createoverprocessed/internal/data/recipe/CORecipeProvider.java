@@ -28,6 +28,8 @@ public class CORecipeProvider extends RecipeProvider {
         GENERATORS.add(new COHoneyingRecipeGen(output, registries));
         GENERATORS.add(new COSandingRecipeGen(output, registries));
         GENERATORS.add(new COSeethingRecipeGen(output, registries));
+        GENERATORS.add(new COStickyingRecipeGen(output, registries));
+        GENERATORS.add(new COWitheringRecipeGen(output, registries));
 
         generator.addProvider(true, new DataProvider() {
 
