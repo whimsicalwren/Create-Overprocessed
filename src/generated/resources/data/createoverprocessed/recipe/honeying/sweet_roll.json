@@ -1,0 +1,13 @@
+{
+  "type": "createoverprocessed:honeying",
+  "ingredients": [
+    {
+      "item": "minecraft:bread"
+    }
+  ],
+  "results": [
+    {
+      "id": "create:sweet_roll"
+    }
+  ]
+}

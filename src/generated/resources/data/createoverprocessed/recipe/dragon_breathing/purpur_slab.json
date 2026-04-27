@@ -1,0 +1,13 @@
+{
+  "type": "createoverprocessed:dragon_breathing",
+  "ingredients": [
+    {
+      "item": "minecraft:quartz_slab"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:purpur_slab"
+    }
+  ]
+}

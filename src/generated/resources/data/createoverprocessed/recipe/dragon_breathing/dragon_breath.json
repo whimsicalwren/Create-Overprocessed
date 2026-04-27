@@ -1,0 +1,19 @@
+{
+  "type": "createoverprocessed:dragon_breathing",
+  "ingredients": [
+    {
+      "type": "neoforge:components",
+      "components": {
+        "minecraft:potion_contents": {
+          "potion": "minecraft:water"
+        }
+      },
+      "items": "minecraft:potion"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:dragon_breath"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "type": "createoverprocessed:stickying",
+  "ingredients": [
+    {
+      "item": "create:dough"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:slime_ball"
+    }
+  ]
+}

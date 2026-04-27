@@ -1,0 +1,14 @@
+{
+  "type": "createoverprocessed:freezing",
+  "ingredients": [
+    {
+      "item": "minecraft:blaze_rod"
+    }
+  ],
+  "results": [
+    {
+      "chance": 0.6,
+      "id": "minecraft:breeze_rod"
+    }
+  ]
+}

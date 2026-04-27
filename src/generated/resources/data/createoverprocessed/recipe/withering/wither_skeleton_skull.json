@@ -1,0 +1,14 @@
+{
+  "type": "createoverprocessed:withering",
+  "ingredients": [
+    {
+      "item": "minecraft:skeleton_skull"
+    }
+  ],
+  "results": [
+    {
+      "chance": 0.001,
+      "id": "minecraft:wither_skeleton_skull"
+    }
+  ]
+}

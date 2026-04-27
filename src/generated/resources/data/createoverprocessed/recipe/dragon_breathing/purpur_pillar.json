@@ -1,0 +1,13 @@
+{
+  "type": "createoverprocessed:dragon_breathing",
+  "ingredients": [
+    {
+      "item": "minecraft:quartz_pillar"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:purpur_pillar"
+    }
+  ]
+}

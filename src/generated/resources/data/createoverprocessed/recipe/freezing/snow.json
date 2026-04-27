@@ -1,0 +1,13 @@
+{
+  "type": "createoverprocessed:freezing",
+  "ingredients": [
+    {
+      "item": "minecraft:snowball"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:snow_block"
+    }
+  ]
+}
